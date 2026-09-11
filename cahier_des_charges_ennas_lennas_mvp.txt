@@ -1,0 +1,745 @@
+CAHIER DES CHARGES SIMPLIFIÉ
+Plateforme « الناس للناس / Ennas Lennas »
+
+Version : MVP
+Objectif : lancer une plateforme simple, fiable et évolutive de mise en relation entre personnes ayant besoin d’aide et personnes souhaitant aider.
+
+============================================================
+1. PRÉSENTATION DU PROJET
+============================================================
+
+Nom :
+الناس للناس – Ennas Lennas
+
+Concept :
+Créer une plateforme web permettant à une personne ou une famille de soumettre une demande d’aide.
+
+La demande est vérifiée par l’équipe « Ennas Lennas » avant publication.
+
+Les visiteurs peuvent ensuite consulter les cas publiés et proposer leur aide.
+
+La plateforme ne promet pas de financer ou de résoudre toutes les situations.
+Elle agit principalement comme intermédiaire entre le demandeur et les personnes souhaitant aider.
+
+Exemples de demandes :
+- médicaments ;
+- alimentation ;
+- vêtements ;
+- fournitures scolaires ;
+- équipement ;
+- aide ponctuelle pour une famille ;
+- autre besoin social validé par l’équipe.
+
+============================================================
+2. POSITIONNEMENT
+============================================================
+
+La plateforme Ennas Lennas n’est pas principalement une plateforme de gestion de catastrophes ou de convois humanitaires.
+
+Son fonctionnement est centré sur des cas individuels ou familiaux pouvant exister toute l’année.
+
+Exemple :
+
+Personne dans le besoin
+        |
+        v
+Soumission d’une demande
+        |
+        v
+Vérification par l’équipe
+        |
+        v
+Publication du cas
+        |
+        v
+Partage sur le site / Instagram
+        |
+        v
+Une personne propose son aide
+        |
+        v
+Mise en relation
+        |
+        v
+Suivi puis clôture du cas
+
+============================================================
+3. OBJECTIFS DU MVP
+============================================================
+
+Le MVP doit permettre de :
+
+1. Centraliser les demandes reçues actuellement sur Instagram.
+2. Éviter de gérer toutes les demandes dans les messages privés.
+3. Vérifier les demandes avant publication.
+4. Publier uniquement les informations nécessaires.
+5. Permettre aux visiteurs de rechercher les cas disponibles.
+6. Permettre à une personne de proposer son aide.
+7. Suivre le statut de chaque demande.
+8. Faciliter le partage des cas sur Instagram, WhatsApp et autres réseaux.
+
+Le MVP ne doit pas gérer directement les paiements ou collecter de l’argent.
+
+============================================================
+4. UTILISATEURS
+============================================================
+
+4.1 Visiteur
+
+Peut :
+- consulter les cas publiés ;
+- filtrer les cas ;
+- ouvrir le détail d’un cas ;
+- partager un cas ;
+- proposer son aide ;
+- déposer une demande d’aide.
+
+Aucun compte obligatoire pour consulter les cas.
+
+------------------------------------------------------------
+
+4.2 Demandeur
+
+Personne qui dépose une demande.
+
+Informations possibles :
+- prénom ;
+- nom ;
+- téléphone ;
+- wilaya ;
+- commune ;
+- type de besoin ;
+- description ;
+- montant estimatif si nécessaire ;
+- photos ou justificatifs.
+
+Les informations personnelles restent privées.
+
+------------------------------------------------------------
+
+4.3 Administrateur / Modérateur
+
+Peut :
+- consulter les demandes reçues ;
+- vérifier une demande ;
+- demander des informations supplémentaires ;
+- accepter une demande ;
+- refuser une demande ;
+- publier un cas ;
+- modifier un cas ;
+- clôturer un cas ;
+- gérer les catégories ;
+- consulter les personnes ayant proposé leur aide.
+
+============================================================
+5. FONCTIONNALITÉS DU SITE PUBLIC
+============================================================
+
+5.1 Page d’accueil
+
+Contenu recommandé :
+
+- Logo « الناس للناس ».
+- Phrase :
+  « Une personne a besoin d’aide, une autre peut peut-être l’aider. »
+
+Deux boutons principaux :
+
+[ J’ai besoin d’aide ]
+
+[ Je veux aider ]
+
+Puis :
+
+- cas urgents ;
+- derniers cas publiés ;
+- catégories ;
+- explication du fonctionnement ;
+- statistiques simples ;
+- lien Instagram.
+
+------------------------------------------------------------
+
+5.2 Page « Toutes les demandes »
+
+Afficher les cas sous forme de cartes.
+
+Chaque carte peut contenir :
+
+- image ;
+- titre ;
+- catégorie ;
+- wilaya ;
+- niveau d’urgence ;
+- courte description ;
+- progression éventuelle ;
+- bouton « Voir le cas ».
+
+Filtres :
+
+- catégorie ;
+- wilaya ;
+- commune ;
+- urgence ;
+- statut.
+
+------------------------------------------------------------
+
+5.3 Page détail d’un cas
+
+Exemple :
+
+Titre :
+Aide pour l’achat d’un médicament
+
+Catégorie :
+Médicament
+
+Localisation :
+Alger
+
+Description :
+Résumé de la situation.
+
+Besoin :
+40 000 DA estimés
+
+Statut :
+En recherche d’aide
+
+Dernière mise à jour :
+28/08/2026
+
+Boutons :
+
+[ Je peux aider ]
+
+[ Partager ]
+
+Important :
+ne jamais afficher publiquement les informations privées du demandeur.
+
+------------------------------------------------------------
+
+5.4 Formulaire « J’ai besoin d’aide »
+
+Étape 1 – Type d’aide
+
+- médicament ;
+- alimentation ;
+- vêtements ;
+- scolarité ;
+- logement ;
+- équipement ;
+- autre.
+
+Étape 2 – Informations
+
+- prénom ;
+- nom ;
+- téléphone ;
+- wilaya ;
+- commune.
+
+Étape 3 – Description
+
+- titre ;
+- description détaillée ;
+- urgence ;
+- montant estimatif si pertinent.
+
+Étape 4 – Documents
+
+Possibilité d’ajouter :
+- photo ;
+- ordonnance ;
+- facture ;
+- justificatif.
+
+Étape 5 – Confirmation
+
+Afficher :
+
+« Votre demande a été envoyée.
+Elle sera vérifiée avant toute publication. »
+
+------------------------------------------------------------
+
+5.5 Formulaire « Je veux aider »
+
+Depuis un cas :
+
+- nom ;
+- prénom ;
+- téléphone ou email ;
+- message ;
+- type d’aide proposé.
+
+Exemples :
+
+- acheter le produit demandé ;
+- fournir une partie du besoin ;
+- fournir le matériel ;
+- aider au transport ;
+- autre.
+
+Après envoi :
+
+la proposition apparaît dans l’espace administration.
+
+============================================================
+6. WORKFLOW D’UNE DEMANDE
+============================================================
+
+Statuts recommandés :
+
+SUBMITTED
+Demande reçue.
+
+UNDER_REVIEW
+En cours de vérification.
+
+NEED_MORE_INFO
+Informations complémentaires demandées.
+
+APPROVED
+Demande validée.
+
+PUBLISHED
+Cas visible publiquement.
+
+IN_PROGRESS
+Une aide est en cours.
+
+COMPLETED
+Besoin satisfait.
+
+CLOSED
+Dossier clôturé.
+
+REJECTED
+Demande refusée.
+
+CANCELLED
+Demande annulée.
+
+Workflow principal :
+
+SUBMITTED
+   |
+   v
+UNDER_REVIEW
+   |
+   +----> NEED_MORE_INFO
+   |          |
+   |          v
+   |      UNDER_REVIEW
+   |
+   +----> REJECTED
+   |
+   v
+APPROVED
+   |
+   v
+PUBLISHED
+   |
+   v
+IN_PROGRESS
+   |
+   v
+COMPLETED
+   |
+   v
+CLOSED
+
+============================================================
+7. ESPACE ADMINISTRATION
+============================================================
+
+7.1 Dashboard
+
+Afficher :
+
+- demandes reçues ;
+- demandes à vérifier ;
+- cas publiés ;
+- cas urgents ;
+- cas terminés ;
+- propositions d’aide reçues.
+
+------------------------------------------------------------
+
+7.2 Liste des demandes
+
+Colonnes :
+
+- référence ;
+- titre ;
+- catégorie ;
+- wilaya ;
+- date ;
+- statut ;
+- urgence ;
+- action.
+
+Actions :
+
+- consulter ;
+- modifier ;
+- accepter ;
+- refuser ;
+- demander des informations ;
+- publier.
+
+------------------------------------------------------------
+
+7.3 Détail d’une demande
+
+Afficher :
+
+PARTIE PRIVÉE
+
+- identité ;
+- téléphone ;
+- documents ;
+- description complète ;
+- notes internes.
+
+PARTIE PUBLIQUE
+
+- titre ;
+- résumé ;
+- catégorie ;
+- wilaya ;
+- besoin ;
+- image publique.
+
+L’administrateur choisit précisément ce qui sera publié.
+
+------------------------------------------------------------
+
+7.4 Propositions d’aide
+
+Afficher :
+
+- cas concerné ;
+- personne souhaitant aider ;
+- téléphone/email ;
+- type d’aide ;
+- message ;
+- date ;
+- statut.
+
+Statuts :
+
+NEW
+CONTACTED
+ACCEPTED
+COMPLETED
+CANCELLED
+
+============================================================
+8. CATÉGORIES
+============================================================
+
+Catégories initiales recommandées :
+
+1. Médicaments / Santé
+2. Alimentation
+3. Scolarité
+4. Vêtements
+5. Logement
+6. Équipement
+7. Transport
+8. Autre
+
+Les catégories sont administrables.
+
+============================================================
+9. MODÈLE DE DONNÉES SIMPLIFIÉ
+============================================================
+
+CASE
+
+- id
+- reference
+- title
+- description
+- publicDescription
+- categoryId
+- wilayaId
+- communeId
+- urgency
+- status
+- amountNeeded
+- createdAt
+- publishedAt
+- closedAt
+
+------------------------------------------------------------
+
+REQUESTER
+
+- id
+- firstName
+- lastName
+- phone
+- email
+- wilayaId
+- communeId
+
+------------------------------------------------------------
+
+CASE_DOCUMENT
+
+- id
+- caseId
+- fileName
+- filePath
+- fileType
+- createdAt
+
+------------------------------------------------------------
+
+HELP_OFFER
+
+- id
+- caseId
+- firstName
+- lastName
+- phone
+- email
+- type
+- message
+- status
+- createdAt
+
+------------------------------------------------------------
+
+CATEGORY
+
+- id
+- name
+- active
+
+------------------------------------------------------------
+
+ADMIN_USER
+
+- id
+- email
+- password
+- role
+- active
+
+============================================================
+11. API PRINCIPALES
+============================================================
+
+API publiques :
+
+GET /api/v1/cases
+
+GET /api/v1/cases/{reference}
+
+GET /api/v1/categories
+
+GET /api/v1/wilayas
+
+GET /api/v1/wilayas/{id}/communes
+
+POST /api/v1/help-requests
+
+POST /api/v1/cases/{id}/help-offers
+
+------------------------------------------------------------
+
+API administration :
+
+POST /api/v1/auth/login
+
+GET /api/v1/admin/cases
+
+GET /api/v1/admin/cases/{id}
+
+PATCH /api/v1/admin/cases/{id}
+
+POST /api/v1/admin/cases/{id}/approve
+
+POST /api/v1/admin/cases/{id}/reject
+
+POST /api/v1/admin/cases/{id}/publish
+
+POST /api/v1/admin/cases/{id}/close
+
+GET /api/v1/admin/help-offers
+
+============================================================
+12. SÉCURITÉ
+============================================================
+
+Principes obligatoires :
+
+- HTTPS ;
+- mot de passe administrateur chiffré/hashé ;
+- authentification Spring Security ;
+- contrôle des rôles ;
+- limitation de taille des fichiers ;
+- contrôle du type des fichiers ;
+- fichiers privés non accessibles directement ;
+- aucune donnée personnelle sensible publiée automatiquement ;
+- logs des actions administratives ;
+- protection anti-spam sur les formulaires.
+
+Ajouter un CAPTCHA seulement si nécessaire.
+
+============================================================
+14. CE QUE LE MVP NE FAIT PAS
+============================================================
+
+Pour garder le projet simple :
+
+PAS de paiement en ligne.
+
+PAS de portefeuille électronique.
+
+PAS de microservices.
+
+PAS d’Elasticsearch au début.
+
+PAS d’application mobile native.
+
+PAS d’intelligence artificielle complexe.
+
+PAS de système automatique de validation des bénéficiaires.
+
+PAS d’intégration WhatsApp complexe au MVP.
+
+Toutes ces fonctionnalités pourront être ajoutées plus tard si elles deviennent utiles.
+
+============================================================
+15. VERSION 2
+============================================================
+
+Après validation du MVP :
+
+- comptes utilisateurs ;
+- espace personnel demandeur ;
+- suivi de demande ;
+- favoris ;
+- notifications ;
+- PWA ;
+- notifications push ;
+- système de bénévoles ;
+- associations partenaires ;
+- statistiques avancées ;
+- génération automatique de visuels sociaux ;
+- recherche avancée.
+
+============================================================
+16. VERSION FUTURE – DONS EN LIGNE
+============================================================
+
+Le paiement ne doit être intégré qu’après définition du cadre juridique.
+
+Avant toute intégration :
+
+- déterminer la structure qui collecte les fonds ;
+- définir les responsabilités ;
+- choisir un prestataire de paiement ;
+- définir la vérification des bénéficiaires ;
+- mettre en place la traçabilité ;
+- définir les règles de remboursement ;
+- faire valider juridiquement le fonctionnement.
+
+============================================================
+17. PRIORITÉS DE DÉVELOPPEMENT
+============================================================
+
+PHASE 1
+
+- projet Spring Boot ;
+- projet Vue 3 ;
+- PostgreSQL ;
+- Docker ;
+- catégories ;
+- wilayas/communes.
+
+PHASE 2
+
+- formulaire demande d’aide ;
+- upload documents ;
+- stockage ;
+- génération référence.
+
+PHASE 3
+
+- authentification administration ;
+- liste demandes ;
+- workflow ;
+- validation/rejet.
+
+PHASE 4
+
+- publication ;
+- liste publique ;
+- détail cas ;
+- recherche et filtres.
+
+PHASE 5
+
+- formulaire « Je veux aider » ;
+- gestion des propositions ;
+- notifications email.
+
+PHASE 6
+
+- audit ;
+- sécurité ;
+- sauvegardes ;
+- HTTPS ;
+- déploiement production.
+
+============================================================
+18. CRITÈRES DE RÉUSSITE DU MVP
+============================================================
+
+Le MVP est terminé lorsque :
+
+1. Une personne peut déposer une demande depuis son téléphone.
+
+2. L’équipe reçoit la demande dans le back-office.
+
+3. L’équipe peut vérifier la demande.
+
+4. L’équipe peut accepter ou refuser la demande.
+
+5. Une demande acceptée peut être publiée.
+
+6. Les données privées ne sont jamais visibles publiquement.
+
+7. Les visiteurs peuvent consulter les cas.
+
+8. Un visiteur peut proposer son aide.
+
+9. L’équipe peut consulter et traiter les propositions.
+
+10. Un cas peut être marqué comme terminé puis clôturé.
+
+============================================================
+19. PHILOSOPHIE DU PRODUIT
+============================================================
+
+Le cœur de « الناس للناس » doit rester très simple :
+
+Une personne a besoin d’aide.
+
+Une autre personne peut aider.
+
+La plateforme permet de les rapprocher de manière organisée, respectueuse et transparente.
+
+Le produit ne doit pas devenir inutilement complexe avant d’avoir validé ce besoin avec de vrais utilisateurs.
+
+============================================================
+FIN
+============================================================
